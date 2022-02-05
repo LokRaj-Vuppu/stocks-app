@@ -1,0 +1,40 @@
+#btn-add {
+    text-align: center;
+}
+
+#data {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#stock-data td:nth-child(3){
+    text-align: right;
+}
+
+
+#stock-data td{
+    /* text-align: center; */
+    padding: 15px;
+}
+
+#stock-data td, #stock-data th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  
+}
+
+#stock-data tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#stock-data tr:hover {
+  background-color: #ddd;
+}
+
+#stock-data th {
+  cursor: pointer;
+  padding: 12px;
+  text-align: center;
+  background-color: wheat;
+  color: black;
+}

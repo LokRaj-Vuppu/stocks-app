@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h4 id="data">Stock WatchList</h4>
+
+<table id="stock-data" class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">SL.No</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for stock in stock_details %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ stock.stock_name }}</td>
+                <td>{{ stock.quantity }}</td>
+            </tr>
+        {% endfor %}
+
+    </tbody>
+  </table>
+
+
+{% endblock content %}
+
+
